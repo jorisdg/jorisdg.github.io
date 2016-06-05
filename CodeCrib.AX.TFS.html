@@ -1,0 +1,868 @@
+---
+layout: default
+title: CodeCrib - CodeCrib.AX.TFS
+redirect_from:
+  - CodeCrib.AX.TFS.aspx.html
+---
+
+        <span class="Main_Header">CodeCrib.AX.TFS</span><br/>
+        <br/>
+
+        <span class="Main_Header">Activities for the AOS (Application Server Object)</span><br/>
+        <br/>
+
+        <b>SetAOSDatabase</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Changes the AOS server configuration to a different database.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the AOS server to be used.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>Database</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument containing the database name to set in the AOS server configuration.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>StartAOSService</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Starts the AOS service.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the AOS server to be used.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the startup is allowed to take. If not specified or set to 0, the startup will be allowed to run indefinitely.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>StopAOSService</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Stops the AOS service.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the AOS server to be used.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the startup is allowed to take. If not specified or set to 0, the startup will be allowed to run indefinitely.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <span class="Main_Header">Activities for the AOT (Application Object Tree)</span><br/>
+        <br/>
+
+        <b>AXBuildCompile</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+                Runs the AXBuild process for server-side compilation, as provided with R2 CU7.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>AlternateBinaryFolder</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument for the AXBuild executable. By default this will be set to the binary folder where the client configuration is pointing to.</td>
+                            </tr>
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified, the configuration file will be used to find the path to the server (AOS) executable, and the client binary folder.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument that specifies a time limit for the AXBuild process to finish. If not specified or set to 0, the AXBuild process will be allowed to run indefinitely.</td>
+                            </tr>
+                            <tr>
+                                <td>Workers</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying the number of worker threads to use. If not specified, AXBuild will determine the number of workers to use based on the available number of cores.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br />
+
+        <b>Clean</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Cleans client and server-side artifacts.
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Details</div>
+                        <div class="ExpandedTitle">[-] Details</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                    <ul>
+                        <li>Server label files \Application\Appl\Standard\ax*.al?</li>
+                        <li>Server XppIL files \XppIL\*</li>
+                        <li>Server VSAssemblies \VSAssemblies\*</li>
+                        <li>Client cache
+                            <ul>
+                                <li>\%localappdata%\ax_*.auc</li>
+                                <li>\%localappdata%\ax*.kti</li>
+                            </ul>
+                        </li>
+                        <li>Client VSAssemblies \%localappdata%\Microsoft\Dynamics Ax\VSAssemblies*\* (This will delete all files in all VSAssemblies* folders)</li>
+                    </ul>
+To avoid issues with files being locked, the server must be stopped to successfully delete the files. For the same reason, the user running the activity cannot have a Dynamics AX client session running, regardless of configuration the session may be using.
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the server binary folder.
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>CombineXPOs</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Combines individual XPO files into a single XPO file that can be easily imported.
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Details</div>
+                        <div class="ExpandedTitle">[-] Details</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+Note that Dynamics AX comes with a combine XPO command line tool which is more optimized, but with less options and no source code.
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>CombinedXPOFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the name (and optional path) of the new XPO file.</td>
+                            </tr>
+                            <tr>
+                                <td>Folder</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the path of where the XPOs to-be-combined are located.</td>
+                            </tr>
+                            <tr>
+                                <td>IncludeNonSystemObjects</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying if XPOs for non-system objects should be included in the combined XPO. Default value is FALSE.</td>
+                            </tr>
+                            <tr>
+                                <td>IncludeSystemObjects</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying if XPOs for system objects should be included in the combined XPO. Default value is FALSE.
+Objects considered system objects are the following classes: syssetupformrun.xpo, info.xpo, classfactory.xpo, application.xpo, session.xpo</td>
+                            </tr>
+                            <tr>
+                                <td>Recursive</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument to indicate if the specified Folder should be recursively traversed to find XPOs to combine.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>Compile</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Runs the X++ compiler using the traditional client-side startup command "CompileAll".
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ClientExecutablePath</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying the path of the Dynamics AX client. This should include the executable itself (Ax32.exe).</td>
+                            </tr>
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to start the client, as well as find the path of the log file that will be created during compile. If a list of layer codes and a model manifest file are specified, the configuration file is also used to find the database and server containing the model store to verify existence of the model.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>LayerCodes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument containing a list of layers and layer access codes. If specified and a model manifest file is specified as well, the compile will be run in the layer and model identified by  the model manifest.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying the path and filename of a model manifest file. If specified and a layer code list is specified, the compile will be run in the layer and model identified by the model manifest.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the compile is allowed to run. If not specified or set to 0, the compile will be allowed to run indefinitely. Note that the client may throw an error or a dialog upon opening, causing the client to never exit.</td>
+                            </tr>
+                            <tr>
+                                <td>UpdateCrossReference</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying if the compile should also update the cross reference. Note that this significantly increases the time needed to finish the compile. Default is false.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>DeployReferences</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+This activity will copy "references" to client and server paths that are used as .NET reference folders.
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Details</div>
+                        <div class="ExpandedTitle">[-] Details</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+Third-party libraries may be referenced in the AOT and needed to successfully compile the application. This avoids any prerequisites to be setup in advance and allows using the same AOS to build multiple different applications or different versions of the same applications.
+<ul>
+    <li>Server side, references are copied into \bin\VSAssemblies</li>
+	<li>Client side, references are copied into any and ALL VSAssemblies* folders found in the user's \%localappdata%\Microsoft\Dynamics Ax\ folder.</li>
+</ul>
+Files are copied in all VSAssemblies in case of R2CU7+. To find the actual VSAssemblies folder the activity would need to read the environment's GUID from the data-database. Copying to all VSAssemblies is less overhead and one dependency less.
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the server binary folder.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>ReferencesFolder</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying a folder containing any and all files that need to be copied.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>GenerateCIL</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Starts the full CIL generation process using the Dynamics AX client startup command.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ClientExecutablePath</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying the path and filename of the client executable to be used.</td>
+                            </tr>
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the Dynamics AX client path.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the CIL generation is allowed to run. If not specified or set to 0, the generation will be allowed to run indefinitely. Note that the client may throw an error or a dialog upon opening, causing the client to never exit.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>ImportLabels</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Imports label files into the application using the Dynamics AX client autorun startup command.
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Details</div>
+                        <div class="ExpandedTitle">[-] Details</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+Note that it will check the first 50 lines of the label file to find an actual label text. If no text is found, the activity considers the label file empty and won't import it.<br />
+To avoid possible issues with the AOS comparing existing label files with the label file being imported (ignoring the absence of the labels in the actual model store), make sure to run the "Clean" activity first. Additionally, the activity will call Label::flush after import to force the AOS to update the model store. This avoids the final model having no labels.                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the Dynamics AX client path.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>LabelFilesFolder</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying a folder containing the label files to be imported.</td>
+                            </tr>
+                            <tr>
+                                <td>LayerCodes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument containing a list of layers and layer access codes. If specified and a model manifest file is specified as well, the compile will be run in the layer and model identified by  the model manifest.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the path and filename of a model manifest file. The model manifest will be used to find the model, publisher and layer to import the labels into. The correct access code for the layer will be read from the LayerCodes argument.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the import is allowed to run. If not specified or set to 0, the import will be allowed to run indefinitely. Note that the client may throw an error or a dialog upon opening, causing the client to never exit.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>ImportVSProject</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Imports VS projects into the AOT using the Dynamics AX client by calling SysTreeNodeVSProject::importProject from an autorun file.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the Dynamics AX client path.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>LayerCodes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument containing a list of layers and layer access codes. If specified and a model manifest file is specified as well, the compile will be run in the layer and model identified by  the model manifest.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the path and filename of a model manifest file. The model manifest will be used to find the model, publisher and layer to import the labels into. The correct access code for the layer will be read from the LayerCodes argument.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the import is allowed to run. If not specified or set to 0, the import will be allowed to run indefinitely. Note that the client may throw an error or a dialog upon opening, causing the client to never exit.</td>
+                            </tr>
+                            <tr>
+                                <td>VSProjectsFolder</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying a folder that will be recursively  searched for .csproj, .dynamicsproj and .vbproj files to be imported.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>ImportXPO</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Imports an XPO file into the AOT by using the Dynamics AX client with an autorun file.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the Dynamics AX client path.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>LayerCodes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument containing a list of layers and layer access codes. If specified and a model manifest file is specified as well, the compile will be run in the layer and model identified by  the model manifest.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the path and filename of a model manifest file. The model manifest will be used to find the model, publisher and layer to import the labels into. The correct access code for the layer will be read from the LayerCodes argument.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the import is allowed to run. If not specified or set to 0, the import will be allowed to run indefinitely. Note that the client may throw an error or a dialog upon opening, causing the client to never exit.</td>
+                            </tr>
+                            <tr>
+                                <td>XPOFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the XPO file to be imported.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>Synchronize</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Synchronizes using the Dynamics AX client with an autorun file.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to start the client.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>TimeOutMinutes</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a maximum number of minutes the synchronize is allowed to run. If not specified or set to 0, the synchronize will be allowed to run indefinitely. Note that the client may throw an error or a dialog upon opening, causing the client to never exit.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <span class="Main_Header">Activities for the Model Store</span><br/>
+        <br/>
+
+        <b>CreateModel</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Creates a model in the model store using the settings provided by the model manifest file.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the model store to create the model in.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>DescriptionOverride</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument that allows the model description specified in the model manifest to be overridden by the value specified.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying a model manifest file containing all the properties for the model to be created.</td>
+                            </tr>
+                            <tr>
+                                <td>SetNoInstallMode</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument putting the model store into "no install mode" after performing the model store operation. This will suppress the "Model Store Changed" dialog at client startup.</td>
+                            </tr>
+                            <tr>
+                                <td>VersionOverride</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument that allows the model version specified in the model manifest to be overridden by the value specified.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>ExportModel</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Exports a model from the model store.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>AxUtilBinaryFolder</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a folder containing the AXUtil binaries. This can be used to extract a model using an older axutil kernel version, allowing a more recent kernel version to be used for building older application versions. Note that this is an undocumented and unsupported workaround. It will not work across major (R) releases but will typically work across minor (CU) versions within a major version. Please test your specific scenarios.</td>
+                            </tr>
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the model store database and server to be used.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the path and filename of the new model file.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the model manifest containing the model name and publisher of the model to be extracted.</td>
+                            </tr>
+                            <tr>
+                                <td>StrongNameKeyFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a key file to sign (strong name) the extracted model.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>ExportModelStore</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Exports a full model store.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>AxUtilBinaryFolder</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying a folder containing the AXUtil binaries. This can be used to extract a model using an older axutil kernel version, allowing a more recent kernel version to be used for building older application versions. Note that this is an undocumented and unsupported workaround. It will not work across major (R) releases but will typically work across minor (CU) versions within a major version. Please test your specific scenarios.</td>
+                            </tr>
+                            <tr>
+                                <td>CompressModelStore</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying if the extracted model store should be compressed using Gzip after extraction.</td>
+                            </tr>
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the model store database and server to be used.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelStoreFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the path and filename of the new model store file.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>InstallModel</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Installs a model into the model store.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the model store database and server to be used.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the name and path of the model file to be imported.</td>
+                            </tr>
+                            <tr>
+                                <td>SetNoInstallMode</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument putting the model store into "no install mode" after performing the model store operation. This will suppress the "Model Store Changed" dialog at client startup.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>UninstallAllModelsFromLayer</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Uninstalls all models in a specific layer.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the model store database.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>Layer</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the layer to uninstall models from.</td>
+                            </tr>
+                            <tr>
+                                <td>SetNoInstallMode</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument putting the model store into "no install mode" after performing the model store operation. This will suppress the "Model Store Changed" dialog at client startup.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>UninstallAllModelsFromModelLayer</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Uninstalls all models in the layer specified in a model manifest.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the model store database.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the model manifest to extract the layer information from.</td>
+                            </tr>
+                            <tr>
+                                <td>SetNoInstallMode</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument putting the model store into "no install mode" after performing the model store operation. This will suppress the "Model Store Changed" dialog at client startup.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <b>UninstallModel</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Uninstalls a model from the model store.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the model store database.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>ModelManifestFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the model manifest of the model to be uninstalled.</td>
+                            </tr>
+                            <tr>
+                                <td>SetNoInstallMode</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument putting the model store into "no install mode" after performing the model store operation. This will suppress the "Model Store Changed" dialog at client startup.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
+
+        <span class="Main_Header">Activities for the SQL Database</span><br/>
+        <br/>
+
+        <b>RestoreDb</b>
+            <div style="margin-left: 15px;">
+                <div style="margin-left: 15px;">
+Restores a SQL database.
+                </div>
+                <div style="margin-left: 15px;">
+                    <div class="CollapsibleToggle">
+                        <div class="CollapsedTitle">[+] Arguments</div>
+                        <div class="ExpandedTitle">[-] Arguments</div>
+                    
+                        <div class="Collapsible" style="margin-left: 15px;">
+                        <table class="argumentstable">
+                            <tr>
+                                <td>BackupFilePath</td>
+                                <td style="width: 20px;"></td>
+                                <td>File and path of the backup file to be restored.</td>
+                            </tr>
+                            <tr>
+                                <td>ConfigurationFile</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument with full path and filename to a Dynamics AX client configuration file (.axc). If specified the configuration file will be used to find the SQL server to be used.<br />
+If this argument is not specified, the current default client configuration for the user running the activities will be used.</td>
+                            </tr>
+                            <tr>
+                                <td>DatabaseName</td>
+                                <td style="width: 20px;"></td>
+                                <td>Required argument specifying the name of the database to restore the backup to. Note that if this database already exists, it will be overwritten.</td>
+                            </tr>
+                            <tr>
+                                <td>ServerName</td>
+                                <td style="width: 20px;"></td>
+                                <td>Optional argument specifying the SQL server the database should be restored to. If this argument is not specified, the server specified in the configuration will be used.</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br/>
