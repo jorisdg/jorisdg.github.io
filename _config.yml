@@ -1,0 +1,4 @@
+name: CodeCrib.com
+markdown: kramdown
+gems:
+  - jekyll-redirect-from

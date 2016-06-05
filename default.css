@@ -1,0 +1,280 @@
+﻿body
+{
+    background: #FFFFFF;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    color: #8C0209;
+}
+
+a:link
+{
+    color: #000000;
+}
+
+a:visited
+{
+    color: #000000;
+}
+
+a:hover
+{
+    color: #000000;
+}
+
+a:active
+{
+    color: #000000;
+}
+
+a.black:link
+{
+    color: #000000;
+}
+
+a.black:visited
+{
+    color: #000000;
+}
+
+a.black:hover
+{
+    color: #000000;
+}
+
+a.black:active
+{
+    color: #000000;
+}
+
+a.red:link
+{
+    color: #8C0209;
+}
+
+a.red:visited
+{
+    color: #8C0209;
+}
+
+a.red:hover
+{
+    color: #8C0209;
+}
+
+a.red:active
+{
+    color: #8C0209;
+}
+
+a.reverseline:link
+{
+    text-decoration: none;
+}
+
+a.reverseline:visited
+{
+    text-decoration: none;
+}
+
+a.reverseline:hover
+{
+    text-decoration: underline;
+}
+
+a.reverseline:active
+{
+    text-decoration: none;
+}
+
+img
+{
+    margin: 0px;
+    border: 0px;
+}
+
+div.Top_Logo
+{
+    position: relative;
+    width: 1000px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    color: #8C0209;
+}
+
+div.Top_Menu
+{
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+div.Top_Menu_Item
+{
+    margin-right: 20px;
+    float: left;
+}
+
+div.Main_Feature
+{
+    width: 1000px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-color: #8C0209;
+    overflow: hidden;
+    position: relative;
+}
+
+div.Feature
+{
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    float: left;
+}
+
+div.Feature_Column
+{
+    float: left;
+}
+
+div.Main_Listing
+{
+    width: 1000px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+    div.Main_Listing a:link
+    {
+        color: #8C0209;
+        text-decoration: none;
+    }
+
+    div.Main_Listing a:visited
+    {
+        color: #8C0209;
+        text-decoration: none;
+    }
+
+    div.Main_Listing a:hover
+    {
+        color: #8C0209;
+        text-decoration: underline;
+    }
+
+    div.Main_Listing a:active
+    {
+        color: #8C0209;
+        text-decoration: none;
+    }
+
+div.Main_Listing_Column
+{
+    width: 500px;
+    height: auto;
+    float: left;
+    overflow: auto;
+}
+
+.Main_Header
+{
+    font-size: 32px;
+    color: #000000;
+}
+
+span.Main_Header a:link
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+span.Main_Header a:visited
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+span.Main_Header a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+span.Main_Header a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+div.Bottom
+{
+    background-color: #C8C8C8;
+    overflow: auto;
+}
+
+div.Bottom_Menu
+{
+    width: 1000px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    overflow: auto;
+}
+
+div.Bottom_Info
+{
+    width: 1000px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: right;
+    overflow: auto;
+}
+
+div.CollapsibleToggle
+{
+    cursor: pointer;
+}
+
+div.Collapsible
+{
+    display: none;
+    cursor: default;
+}
+
+div.CollapsedTitle
+{
+    display: block;
+}
+
+div.ExpandedTitle
+{
+    display: none;
+}
+
+table.argumentstable
+{
+    width: 500px;
+}
+
+table.argumentstable td
+{
+    vertical-align: top;
+}
