@@ -7,4 +7,4 @@ redirect_from:
 
 ### Contact Me
 
-Well, the domain name for this website is codecrib.com and my first name is Joris. I'll leave the my actual email address as an exercise to the reader :-)
+Well, the domain name for this website is codecrib.com and my first name is Joris. I'll leave my actual email address as an exercise to the reader :-)
