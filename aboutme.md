@@ -13,7 +13,7 @@ Microsoft Dynamics AX and related technologies is my work life. I accidentally s
 Microsoft bought the product. Since then, I have worked for several ISVs and VARs on AX implementations in Belgium, The Netherlands, England,
 Luxemburg, Italy and across the USA. In 2006 I moved to the USA where I initially worked for a large
 accounting and technology firm managing a team of Dynamics AX developers working on customer projects. Currently I work as a senior solution architect
-at Microsoft's Dynamics R&D division. My job consists of working with signature customers, TAP customers, speak at conferences, and bring all the knowledge
+at Microsoft's Dynamics AX R&D division. My job consists of working with signature customers, TAP customers, speaking at conferences, and bringing all the knowledge
 I gain from my interactions with customers and partners back to the product team and drive new features and improvements.<br />
 Due to my work, any Microsoft technologies that come across my desk grab my attention and will get some one-on-one time at some point. It's difficult to stay
 current on technology these days, but one tries.<br/>

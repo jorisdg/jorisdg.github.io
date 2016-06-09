@@ -5,15 +5,17 @@ redirect_from:
   - dynamicsax.aspx.html
 ---
 	    <div class="Main_Listing_Column">
-		    <span class="Main_Header">Latest Blog Posts</span><br/>
-                {% include daxmusings.html %}
+		    <span class="Main_Header"><a href="http://daxmusings.codecrib.com">Latest Blog Posts</a></span><br/>
+                {% for daxmusingspost in site.data.daxmusings limit: 10 %}
+                <a href="{{ daxmusingspost.URL }}">{{ daxmusingspost.Title }}</a><br/>
+                {% endfor %}
 		    <br/>
 		    <span class="Main_Header">Twitter Hashtags to Follow</span><br/>
 			    <a href="https://twitter.com/search?q=%23msdynax&amp;src=typd">#MSDYNAX</a><br/>
 			    <a href="https://twitter.com/search?q=%23msdyncomm&amp;src=typd">#MSDYNCOMM</a><br/>
 			    <a href="https://twitter.com/search?q=%23ax2012&amp;src=typd">#AX2012</a><br/>
 		    <br/>
-		    <span class="Main_Header"><a href="http://mvp.microsoft.com/en-us/search-mvp.aspx?ty=a&amp;ex=Dynamics+AX">MVPs</a></span><br/>
+		    <span class="Main_Header"><a href="https://mvp.microsoft.com/en-us/MvpSearch?ex=Business+Solutions&kw=Dynamics+AX">MVPs</a></span><br/>
                 <a href="http://tech.alirazazaidi.com">Ali Raza Zaidi</a><br />
                 <a href="http://www.kaya-consulting.com/author/andre/">Andr&#233; Arnaud de Calavon</a><br />
 			    <a href="http://www.elrincondynamics.es">Antonio Gilabert</a><br/>

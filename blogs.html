@@ -7,6 +7,8 @@ redirect_from:
 
 	    <div class="Main_Listing_Column">
 		    <span class="Main_Header"><a href="http://daxmusings.codecrib.com">Dynamics AX Musings</a></span><br/>
-                {% include daxmusings.html %}
+            {% for daxmusingspost in site.data.daxmusings limit: 10 %}
+		        <a href="{{ daxmusingspost.URL }}">{{ daxmusingspost.Title }}</a><br/>
+		        {% endfor %}
 		    <br/>
         </div>

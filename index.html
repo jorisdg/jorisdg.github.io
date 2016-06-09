@@ -7,13 +7,19 @@ redirect_from:
 
 	<div class="Main_Listing_Column">
 		<span class="Main_Header">Latest Blog Posts</span><br/>
-            {% include daxmusings.html %}
+            {% for daxmusingspost in site.data.daxmusings limit: 10 %}
+		<a href="{{ daxmusingspost.URL }}">{{ daxmusingspost.Title }}</a><br/>
+		{% endfor %}
 		<br/>
 		<span class="Main_Header">Newsworthy</span><br/>
-            {% include newsworthy.html %}
+            {% for newsitem in site.data.newsworthy limit: 10 %}
+		<a href="{{ newsitem.URL }}">{{ newsitem.Title }}</a><br/>
+		{% endfor %}
 		<br/>
 		<span class="Main_Header">Read &amp; Recommended</span><br/>
-            {% include readandrecommended.html %}
+            {% for readitem in site.data.readandrecommended limit: 10 %}
+		<a href="{{ readitem.URL }}">{{ readitem.Title }}</a><br/>
+		{% endfor %}
 		<br/>
 	</div>
 	
@@ -26,7 +32,7 @@ redirect_from:
 		<br/>
 		<span class="Main_Header"><a href="https://twitter.com/#!/jorisdg">Twitter Feed</a></span><br/>
 			<a class="twitter-timeline" href="https://twitter.com/jorisdg" data-dnt="true" data-widget-id="452506337167962113">Tweets by @jorisdg</a>
-            <script type="text/javascript" src="twitter.js"></script>
+            <script type="text/javascript" src="js/twitter.js"></script>
 		<br/>
 	</div>
   
