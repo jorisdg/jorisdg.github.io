@@ -10,4 +10,4 @@ All code samples, walkthroughs and other instructions are provided as-is. Use an
 All opinions expressed in this blog are solely my own and do not necessarily reflect the opinions of my employer.
 
 The names of actual companies and products mentioned in this blog may be the trademarks of their respective owners.
-Microsoft and Dynamics AX are registered trademarks of Microsoft Corporation in the United States and other countries.
+Microsoft, Dynamics AX and Dynamics 365 are registered trademarks of Microsoft Corporation in the United States and other countries.
